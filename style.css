@@ -1,0 +1,349 @@
+    header h1 {
+        padding-left: 235px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    
+    .main p {
+        text-align: center;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    em strong {
+        color: red;
+    }
+    
+    #mision {
+        font-size: 20px;
+    }
+    
+    div {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #banner {
+        width: 70%;
+        margin-top: 0;
+    }
+    
+    .banner {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .main {
+        background-color: lightgray;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .list {
+        background-color: lightgray;
+        display: inline-block;
+    }
+    
+    .list-items {
+        list-style: none;
+        font-style: italic;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .diferenciales {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: center;
+        width: 900px;
+        height: 400px;
+        margin: 0 auto;
+        padding-top: 0;
+        gap: 20px;
+    }
+    
+    .imagen-diferenciales {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        background-color: lightgray;
+    }
+    
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0;
+    }
+    
+    .logo-imagen {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .logo {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .nav-list li a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .nav-list li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @media (max-width: 478px) {
+        .header {
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    .main_productos {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        gap: 15px;
+    }
+    
+    .cabello,
+    .barba,
+    .combo {
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    
+    .main_productos div h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .texto_producto {
+        margin: 0 auto;
+        width: 95%;
+    }
+    
+    .precio {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    
+    @media (max-width: 768px) {
+        .main_productos {
+            flex-direction: column;
+            width: 75%;
+            justify-content: center;
+            margin-top: 25px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    
+    .item_producto {
+        box-sizing: border-box;
+    }
+    
+    .item_producto:hover {
+        border-color: #c78c19;
+        cursor: pointer;
+    }
+    
+    .item_producto:hover h2 {
+        font-size: 28px;
+    }
+    
+    .item_producto:active {
+        border-color: #088c19;
+        cursor: pointer;
+    }
+    
+    @media (min-width: 768px) {
+        .item_producto {
+            width: 33.3%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main_productos {
+            width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .item_imagen {
+            width: 80%;
+        }
+    }
+    
+    .bg {
+        background: url(./img/bg.jpg);
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+    
+    .bg p {
+        color: #ffffff;
+        font-size: 13px;
+    }
+    
+    .form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: 478px) {
+        .form {
+            width: 90%;
+        }
+    }
+    
+    .form label {
+        width: 90%;
+        max-width: 350px;
+        text-align: start;
+    }
+    
+    .enviar {
+        background-color: lightgray;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 15px;
+    }
+    
+    .enviar:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    #nombre,
+    #contrasenha,
+    #email,
+    #telefono,
+    #text,
+    #mensaje,
+    #contacto {
+        width: 90%;
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+    
+    #text {
+        height: 150px;
+    }
+    
+    .nombre {
+        margin-top: 15px;
+    }
+    
+    .contacto-radios {
+        text-align: left;
+    }
+    
+    #contacto label {
+        text-align: left;
+        display: block;
+    }
+    
+    #contacto p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .horario {
+        width: 90%;
+        max-width: 350px;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .notificaciones {
+        margin-bottom: 5px;
+    }
+    
+    .footer-imagen {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .enviar {
+        width: 40%;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: orange;
+        color: white;
+        transition: 1s background-color;
+    }
+    
+    .enviar:hover {
+        text-decoration: underline;
+        background-color: darkorange;
+        cursor: pointer;
+    }
+    
+    .table {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .schedule thead {
+        background-color: #555555;
+        color: white;
+    }
+    
+    .schedule td,
+    th {
+        border: 1px solid black;
+        padding: 5px;
+    }
